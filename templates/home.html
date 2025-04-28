@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Dhyaa's Profile</title>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Dhyaa's Profile</a>
+        <nav>
+            <a href="{{ url_for('home') }}" class="active">Home</a>
+            <a href="{{ url_for('about') }}">About Me</a>
+            <a href="{{ url_for('portofolio') }}">Art Portfolio</a>
+            <a href="{{ url_for('contact') }}">Contact Me</a>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="home-img">
+            <img src="{{ url_for('static', filename='image/profile.jpeg') }}" alt="Foto Profil">
+        </div>
+        <div class="home-content">
+            <h1>Hi! Nama Saya <span>Dhyaa</span></h1>
+            <h3>Seorang Mahasiswa Teknik Elektro</h3>
+        </div>
+    </section>
+</body>
+</html>

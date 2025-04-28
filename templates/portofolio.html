@@ -1,0 +1,114 @@
+<header class="header">
+    <a href="#" class="logo">Dhyaa's Profile</a>
+    <nav>
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('about') }}" >About Me</a>
+        <a href="{{ url_for('portofolio') }}" class="active">Art Portfolio</a>
+        <a href="{{ url_for('contact') }}">Contact Me</a>
+    </nav>
+</header>
+<section id="portofolio" class="portofolio">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <h1 style="padding-top: 5rem; font-size: 5rem; font-weight: 700; color:#f7d7c0">Art Portfolio</h1>
+    <h5>Ini merupakan hasil gambaran saya. Saya dapat menggambar dalam 2 media berbeda, yang pertama dalam media kertas (gambar sketsa manual) dan yang kedua dalam media digital(gambar digital)</h5>
+    <main class="gallery">
+        <div class="photo">
+            <div style="text-align: center;">
+                <img src="{{ url_for('static', filename='image/ugs.jpg') }}" alt="maskot ugs" style="border-radius: 5%;">
+                <h2>Maskot Unpad Goes to School Sukabumi 2025</h2>
+            </div>
+        </div>
+        <div class="photo">
+            <div style="text-align: center;">
+                <img src="{{ url_for('static', filename='image/ali.jpeg') }}" alt="ali" style="border-radius: 5%;">
+                <h2>Ali from Bumi Series - Tere Liye</h2>
+            </div>
+        </div>
+        <div class="photo">
+            <div style="text-align: center;">
+                <img src="{{ url_for('static', filename='image/archi.jpg') }}" alt="maskot led" style="border-radius: 5%;">
+                <h2>Maskot LED Archinoda Teknik Elektro 2024</h2>
+            </div>
+        </div>
+    </main>
+    <main class="gallery">
+        <div class="photo">
+            <div style="text-align: center;">
+                <img src="{{ url_for('static', filename='image/kageyama.jpeg') }}" alt="kageyama" style="border-radius: 5%;">
+                <h2>Tobio Kageyama - Haikyuu</h2>
+            </div>
+        </div>
+        <div class="photo">
+            <div style="text-align: center;">
+                <img src="{{ url_for('static', filename='image/hinata.jpeg') }}" alt="hinata" style="border-radius: 5%;">
+                <h2>Shoyo Hinata - Haikyuu</h2>
+            </div>
+        </div>
+        <div class="photo">
+            <div style="text-align: center;">
+                <img src="{{ url_for('static', filename='image/oikawa.jpeg') }}" alt="oikawa" style="border-radius: 5%;">
+                <h2>Toru Oikawa - Haikyuu</h2>
+            </div>
+        </div>
+    </main>
+    <main class="gallery">
+        <div class="photo">
+            <div style="text-align: center;">
+                <img src="{{ url_for('static', filename='image/tsukishima.jpeg') }}" alt="tsukishima" style="border-radius: 5%;">
+                <h2>Kei Tsukishima - Haikyuu</h2>
+            </div>
+        </div>
+        <div class="photo">
+            <div style="text-align: center;">
+                <img src="{{ url_for('static', filename='image/rose.jpg') }}" alt="rose" style="border-radius: 5%;">
+                <h2>Red Rose</h2>
+            </div>
+        </div>
+        <div class="photo">
+            <div style="text-align: center;">
+                <img src="{{ url_for('static', filename='image/mikasa.jpg') }}" alt="mikasa" style="border-radius: 5%;">
+                <h2>Mikasa Ackerman - Attack On Titan</h2>
+            </div>
+        </div>
+    </main>
+    <main class="gallery">
+        <div class="photo">
+            <div style="text-align: center;">
+                <img src="{{ url_for('static', filename='image/ktm cowo.jpeg') }}" alt="ktm cowo" style="border-radius: 5%;">
+                <h2>Merchandise KTM Unpad - Boy Version</h2>
+            </div>
+        </div>
+        <div class="photo">
+            <div style="text-align: center;">
+                <img src="{{ url_for('static', filename='image/sticker.jpeg') }}" alt="sticker" style="border-radius: 5%;">
+                <h2>Sticker Fakultas Unpad</h2>
+            </div>
+        </div>
+        <div class="photo">
+            <div style="text-align: center;">
+                <img src="{{ url_for('static', filename='image/ktm cewe.jpeg') }}" alt="ktm cewe" style="border-radius: 5%;">
+                <h2>Merchandise KTM Unpad - Girl Version</h2>
+            </div>
+        </div>
+    </main>
+    <main class="gallery">
+        <div class="photo">
+            <div style="text-align: center;">
+                <img src="{{ url_for('static', filename='image/about me.jpeg') }}" alt="about me" style="border-radius: 5%;">
+                <h2>About Me</h2>
+            </div>
+        </div>
+        <div class="photo">
+            <div style="text-align: center;">
+                <img src="{{ url_for('static', filename='image/liyue.jpeg') }}" alt="liyue" style="border-radius: 5%;">
+                <h2>Liyue Harbour - Genshin impact</h2>
+            </div>
+        </div>
+        <div class="photo">
+            <div style="text-align: center;">
+                <img src="{{ url_for('static', filename='image/chasis.jpeg') }}" alt="chasis" style="border-radius: 5%;">
+                <h2>Chasis Design</h2>
+            </div>
+        </div>
+    </main>
+</section>
